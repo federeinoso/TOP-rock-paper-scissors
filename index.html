@@ -4,13 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test_NO_CLOSE</title>
+    <title>rock, paper, scissors</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
   </head>
   <body>
     <div class="flex-containter">
-      <h1>Rock, paper, scissors</h1>
+      <h1 id="title">the game</h1>
+      <div id="buttons">
+        <button id="rock">rock</button>
+        <button id="paper">paper</button>
+        <button id="scissors">scissors</button>
+      </div>
+      <div id="layout">
+        <div>
+          <h1>me</h1>
+          <h1 id="choiceP"></h1>
+          <h1 id="playerScore">score: 0</h1>
+        </div>
+        <h1 id="tie">tie: 0</h1>
+        <div id="computerEnd">
+          <h1>computer</h1>
+          <h1 id="choiceC"></h1>
+          <h1 id="computerScore">score: 0</h1>
+        </div>
+      </div>
+      <div id="results">
+        <h1 id="winner"></h1>
+        <h1 id="playAgain">¿play again?</h1>
+      </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

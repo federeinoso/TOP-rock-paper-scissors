@@ -1,20 +1,62 @@
 body {
-  background: #313234;
+  background: whitesmoke;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: rgb(172, 169, 169);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 h1 {
-  font-size: 180px;
+  font-size: 50px;
   margin: 0;
 }
 
 .flex-containter {
-  width: 500px;
   display: flex;
+  flex-direction: column;
   text-align: flex-start;
   justify-content: flex-start;
+  align-content: space-between;
+}
+
+button {
+  border: none;
+  background-color: black;
+  font-size: 100px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: white;
+}
+
+#playAgain {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#results {
+  text-align: center;
+}
+
+#layout {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#computerEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
