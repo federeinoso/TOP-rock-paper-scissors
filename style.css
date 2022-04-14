@@ -12,14 +12,6 @@ h1 {
   margin: 0;
 }
 
-.flex-containter {
-  display: flex;
-  flex-direction: column;
-  text-align: flex-start;
-  justify-content: flex-start;
-  align-content: space-between;
-}
-
 button {
   border: none;
   background-color: black;
@@ -27,6 +19,14 @@ button {
   font-weight: bolder;
   cursor: pointer;
   color: white;
+}
+
+.flex-containter {
+  display: flex;
+  flex-direction: column;
+  text-align: flex-start;
+  justify-content: flex-start;
+  align-content: space-between;
 }
 
 #playAgain {
@@ -59,4 +59,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+#rules {
+  text-align: center;
+  margin-top: 12vh;
 }

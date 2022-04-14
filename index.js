@@ -28,6 +28,7 @@ function playRound(playerSelection) {
   let pointsP = document.getElementById("playerScore");
   let pointT = document.getElementById("tie");
   let pointsC = document.getElementById("computerScore");
+  let rules = document.getElementById("rules");
 
   if (
     (playerSelection == "rock" && computerSelection == "scissors") ||
@@ -40,6 +41,7 @@ function playRound(playerSelection) {
     choiceP.textContent = `${playerSelection}`;
 
     if (playerScore == 5) {
+      rules.style.display = "none";
       winner.textContent = "you win";
       document.body.style.backgroundColor = "#32a852";
       disableButton();
@@ -55,6 +57,7 @@ function playRound(playerSelection) {
     choiceC.textContent = `${computerSelection}`;
     choiceP.textContent = `${playerSelection}`;
     if (computerScore == 5) {
+      rules.style.display = "none";
       winner.textContent = "you loose";
       document.body.style.backgroundColor = "#a83232";
       disableButton();
